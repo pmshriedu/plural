@@ -54,7 +54,7 @@ export async function POST(request: NextRequest) {
 
     // Ensure the callback URL is properly formatted
     const callbackUrl =
-      `${baseUrl}/callback?` +
+      `${baseUrl}/success?` +
       new URLSearchParams({
         merchant_id: process.env.PLURAL_MERCHANT_ID || "",
         order_id: reference,
